@@ -496,8 +496,7 @@ body {
   box-shadow: var(--shadow-2);
   max-width: 300px;
   margin-block-end: 60px;
-  margin-left: -6.3rem;
-  width: 65rem;
+  width: 60rem;
   height: 45rem;
 }
 
@@ -1435,5 +1434,3 @@ body {
   height: 250px;
   object-fit: cover;
 }
-
-
