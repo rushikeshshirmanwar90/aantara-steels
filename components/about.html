@@ -1,0 +1,531 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>About us | DVG Exporters</title>
+
+    <!--
+  - google font link
+-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <style>
+      .heading-title {
+        background-color: #22262a;
+        font-size: 6rem;
+        width: fit-content;
+        margin: auto;
+        padding: 2rem;
+        border-radius: 5px;
+        border: 2px solid #fff;
+      }
+
+      .hero {
+        position: relative;
+        min-height: 10vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: grid;
+        place-content: center;
+        padding-block-start: calc(var(--section-padding) + 85px);
+        z-index: 1;
+      }
+
+      .img-cover {
+        width: 115%;
+        height: fit-content;
+        object-fit: contain;
+      }
+
+      ul li p.about-text {
+        font-size: 2.2rem;
+        /* background: red; */
+      }
+
+      .line {
+        width: 80%;
+        height: 2px;
+        margin: auto;
+        background-color: lightgray;
+      }
+
+      .swiper {
+        width: 97vw;
+        max-width: 99vw;
+        padding-top: 50px;
+        padding-bottom: 0px;
+      }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+
+      .swiper-wrapper {
+        margin-top: 5rem;
+        margin-bottom: -25rem !important;
+      }
+
+      .m-center {
+        width: fit-content;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header" data-header>
+      <div class="container">
+        <h1>
+          <a href="../index.html" class="logo">DGV Exports</a>
+        </h1>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="../index.html" class="logo">DGV Exports</a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="Close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="../index.html#home" class="navbar-link" data-nav-link>
+                <span>Home</span>
+
+                <ion-icon name="chevron-forward"></ion-icon>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="../index.html#about" class="navbar-link" data-nav-link>
+                <span>About</span>
+
+                <ion-icon name="chevron-forward"></ion-icon>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="../index.html#service" class="navbar-link" data-nav-link>
+                <span>Service</span>
+
+                <ion-icon name="chevron-forward"></ion-icon>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="../index.html#product" class="navbar-link" data-nav-link>
+                <span>Products for exports</span>
+
+                <ion-icon name="chevron-forward"></ion-icon>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a
+                href="../index.html#Certificate "
+                class="navbar-link"
+                data-nav-link
+              >
+                <span>Certificate </span>
+
+                <ion-icon name="chevron-forward"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-contact">
+          <div>
+            <p class="contact-label">Contact us on</p>
+
+            <a href="tel:+919579896842" class="contact-number"
+              >+91 9579896842</a
+            >
+          </div>
+
+          <div class="contact-icon">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+        </div>
+
+        <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <section
+        class="section hero"
+        aria-label="home"
+        id="home"
+        style="background-image: url('../assets/images/bg.jpg')"
+      >
+        <div class="container">
+          <div class="hero-content">
+            <h2 class="h1 hero-title heading-title">About us</h2>
+
+            <img
+              src="../assets/images/hero-shape.png"
+              width="116"
+              height="116"
+              loading="lazy"
+              class="hero-shape shape-1"
+            />
+
+            <img
+              src="../assets/images/hero-shape.png"
+              width="116"
+              height="116"
+              loading="lazy"
+              class="hero-shape shape-2"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="about"
+        style="padding-top: 128px"
+        id="about"
+        aria-label="about"
+      >
+        <div class="container">
+          <figure class="about-banner img-holder">
+            <img
+              src="../assets/images/grid/grid.svg"
+              width="400"
+              height="720"
+              loading="lazy"
+              alt=""
+              class="img-cover"
+              style="padding-block: 0rem"
+            />
+          </figure>
+
+          <div class="about-content">
+            <p class="section-subtitle">DVG Exporters</p>
+
+            <h2 class="h2 section-title">About us</h2>
+
+            <p class="section-text" style="font-size: 2rem">
+              DGV Exporters Pvt Limited stands as a premier name in the realm of
+              international trade, committed to providing exceptional export
+              services. With a keen emphasis on quality, reliability, and client
+              satisfaction, we specialize in facilitating seamless global
+              transactions across a spectrum of industries. Our experienced
+              team, coupled with a profound understanding of diverse markets,
+              enables us to navigate the complexities of international trade
+              with finesse.
+            </p>
+
+            <div class="section-text" style="font-size: 2rem">
+              At DGV Exporters, we pride ourselves on our unwavering commitment
+              to excellence, integrity, and building enduring relationships,
+              making us the preferred choice for businesses seeking top-tier
+              export solutions.
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="about-content"
+          id="OurStrength"
+          style="width: fit-content; margin: 5rem auto"
+        >
+          <p class="section-subtitle">Why we are best..?</p>
+
+          <h2 class="h2 section-title">Our Strength</h2>
+
+          <ul class="about-list" style="font-size: 2.2rem">
+            <li class="about-item">
+              <div class="about-icon">
+                <ion-icon name="chevron-forward"></ion-icon>
+              </div>
+
+              <p class="about-text">
+                Wide Range of products (10+ Products) for Export.
+              </p>
+            </li>
+
+            <li class="about-item">
+              <div class="about-icon">
+                <ion-icon name="chevron-forward"></ion-icon>
+              </div>
+
+              <p class="about-text">We are Integrated with 100+ farmers</p>
+            </li>
+
+            <li class="about-item">
+              <div class="about-icon">
+                <ion-icon name="chevron-forward"></ion-icon>
+              </div>
+
+              <p class="about-text">
+                Competitive Prices with Quality Products with a Packing House
+                Facility.
+              </p>
+            </li>
+
+            <li class="about-item">
+              <div class="about-icon">
+                <ion-icon name="chevron-forward"></ion-icon>
+              </div>
+
+              <p class="about-text">
+                Professionally & Experienced Team for Export Training and
+                Practical Exposure
+              </p>
+            </li>
+
+            <li class="about-item">
+              <div class="about-icon">
+                <ion-icon name="chevron-forward"></ion-icon>
+              </div>
+
+              <p class="about-text">
+                Best Services & Product availability throughout the Year
+              </p>
+            </li>
+
+            <li class="about-item">
+              <div class="about-icon">
+                <ion-icon name="chevron-forward"></ion-icon>
+              </div>
+
+              <p class="about-text">
+                Procurement, Sorting, Grading, Packing, Quality checks & Loading
+                as per ISO Standards.
+              </p>
+            </li>
+
+            <li class="about-item">
+              <div class="about-icon">
+                <ion-icon name="chevron-forward"></ion-icon>
+              </div>
+
+              <p class="about-text">Value Added Services to our Customers.</p>
+            </li>
+
+            <li class="about-item">
+              <div class="about-icon">
+                <ion-icon name="chevron-forward"></ion-icon>
+              </div>
+
+              <p class="about-text">
+                Procurement- Shipping- Customs Clearance- Transportation &
+                International Buyer under one Roof.
+              </p>
+            </li>
+
+            <li class="about-item">
+              <div class="about-icon">
+                <ion-icon name="chevron-forward"></ion-icon>
+              </div>
+
+              <p class="about-text">
+                End-to-End Logistics from Procurement to sales
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="about-content" id="OurStrength" style="width: fit-content; margin: 5rem auto">
+          <p class="section-subtitle m-center">-----our work-----</p>
+
+          <h2 class="h2 section-title m-center">our Gallery</h2>
+
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../assets/images/gallery/img1.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/gallery/img2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/gallery/img3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/gallery/img4.webp" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/gallery/img5.webp" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/gallery/img6.webp" />
+              </div>
+           
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top section">
+          <div class="footer-brand">
+            <a href="#" class="logo">DVG Exporters</a>
+
+            <p class="footer-text">
+              DGV Exporters Pvt Limited stands as a premier name in the realm of
+              international trade, committed to providing exceptional export
+              services. With a keen emphasis on quality, reliability, and client
+              satisfaction,
+            </p>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Quick Links</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">About us</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Products</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Services</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact Us</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Services</p>
+            </li>
+            <li>
+              <a href="#" class="footer-link">TImely Deliveries</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Easy Documents </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Premium and superior products</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Products for exports</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Grains</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Rice</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">All types of spices</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2024 DGV Exports. All Rights Reserved by
+            <a href="#" class="copyright-link">DGV Exports </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+  - #BACK TO TOP
+-->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="Back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up"></ion-icon>
+    </a>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+      });
+    </script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../assets/js/animation.js" defer></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
