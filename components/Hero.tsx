@@ -7,7 +7,7 @@ export default function Hero() {
       className="section hero"
       aria-label="home"
       id="home"
-      style={{ backgroundImage: "url('/assets/images/bg-img.jpg')" }}
+      style={{ backgroundImage: "url('/assets/images/bg-img-2.png')" }}
     >
       <div className="container">
         <div className="hero-content">
@@ -17,7 +17,7 @@ export default function Hero() {
           </h2>
 
           <p className="hero-text">
-            Aantara Steel: Exporting Excellence, Delivering Strength.
+            Aantara Steel: Connect. Trade. Grow
           </p>
 
           <Link href="#product" className="btn-outline">View Product</Link>

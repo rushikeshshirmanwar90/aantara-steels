@@ -45,7 +45,7 @@ export default function Footer() {
               <Link href="#" className="footer-link">Services</Link>
             </li>
             <li>
-              <Link href="#" className="footer-link">Contact Us</Link>
+              <Link href="#contact" className="footer-link">Contact Us</Link>
             </li>
           </ul>
 
@@ -61,6 +61,21 @@ export default function Footer() {
             </li>
             <li>
               <Link href="#" className="footer-link">Premium and superior products</Link>
+            </li>
+          </ul>
+
+          <ul className="footer-list">
+            <li>
+              <p className="footer-list-title">Contact Info</p>
+            </li>
+            <li>
+              <Link href="tel:+919579896842" className="footer-link">+91 9579896842</Link>
+            </li>
+            <li>
+              <Link href="tel:+917028693829" className="footer-link">+91 7028693829</Link>
+            </li>
+            <li>
+              <Link href="mailto:Aantarasteel@gmail.com" className="footer-link">aantarasteel@gmail.com</Link>
             </li>
           </ul>
 
@@ -82,7 +97,7 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p className="copyright">
-            &copy; 2025 Aantara Steel Pvt Ltd. All Rights Reserved by{' '}
+            &copy; 2026 Aantara Steel Pvt Ltd. All Rights Reserved by{' '}
             <Link href="#" className="copyright-link">Aantara steels</Link>
           </p>
         </div>

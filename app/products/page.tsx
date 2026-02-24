@@ -51,6 +51,12 @@ export default function ProductsPage() {
       name: 'Rolling shutter Spring Wire',
       description: 'High-quality spring wire specifically manufactured for rolling shutter mechanisms, providing optimal tension and smooth mechanical performance.',
       image: '/assets/images/product imgs/8. Rolling shutter spring wire.jpg'
+    },
+    {
+      id: '09',
+      name: 'Lead Coil',
+      description: 'Premium lead coil wire engineered for superior electrical conductivity and corrosion resistance, ideal for electrical installations, grounding systems, and specialized industrial applications requiring reliable performance.',
+      image: '/assets/images/product imgs/9. Lead-Coil-Wire.png'
     }
   ];
 

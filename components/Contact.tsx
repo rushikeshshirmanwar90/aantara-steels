@@ -20,8 +20,31 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
+    
+    // Create WhatsApp message with form data
+    const message = `Hello! I'm interested in your services.
+    
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Message: ${formData.message}`;
+    
+    // Encode the message for URL
+    const encodedMessage = encodeURIComponent(message);
+    
+    // Send to primary WhatsApp number
+    const whatsappUrl = `https://wa.me/919579896842?text=${encodedMessage}`;
+    
+    // Open WhatsApp in new tab
+    window.open(whatsappUrl, '_blank');
+    
+    // Reset form after sending
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      message: ''
+    });
   };
 
   return (
@@ -85,6 +108,39 @@ export default function Contact() {
                     <strong>INDIA</strong>
                   </div>
                 </div>
+                
+                <div className="address-item">
+                  <div className="address-icon">
+                    <IonIcon name="call-outline" />
+                  </div>
+                  <div className="address-text">
+                    <a href="tel:+919579896842" style={{ color: '#fff', textDecoration: 'none' }}>
+                      <strong>+91 9579896842</strong>
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="address-item">
+                  <div className="address-icon">
+                    <IonIcon name="call-outline" />
+                  </div>
+                  <div className="address-text">
+                    <a href="tel:+917028693829" style={{ color: '#fff', textDecoration: 'none' }}>
+                      <strong>+91 7028693829</strong>
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="address-item">
+                  <div className="address-icon">
+                    <IonIcon name="mail-outline" />
+                  </div>
+                  <div className="address-text">
+                    <a href="mailto:Aantarasteel@gmail.com" style={{ color: '#fff', textDecoration: 'none' }}>
+                      <strong>aantarasteel@gmail.com</strong>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -139,9 +195,6 @@ export default function Contact() {
               </div>
               <div className="form-actions">
                 <button type="submit">Send Message</button>
-                <a href="https://wa.me/919579896842" target="_blank" rel="noopener noreferrer">
-                  Contact Us On WhatsApp
-                </a>
               </div>
             </form>
           </div>

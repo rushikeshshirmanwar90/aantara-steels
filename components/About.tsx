@@ -35,7 +35,7 @@ export default function About() {
             professionalism, making us a trusted partner for all your steel
             export needs.
           </p>
-          <Link href="#" className="btn">Learn More</Link>
+          <Link href="#contact" className="btn">Learn More</Link>
         </div>
       </div>
     </section>

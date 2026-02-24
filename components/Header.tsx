@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import IonIcon from './IonIcon';
@@ -12,6 +13,15 @@ interface HeaderProps {
 export default function Header({ forceActive = false }: HeaderProps) {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isHeaderActive, setIsHeaderActive] = useState(false);
+  const pathname = usePathname();
+  
+  // Determine if we're on the home page or another page
+  const isHomePage = pathname === '/';
+  
+  // Function to get the correct href for navigation links
+  const getNavHref = (section: string) => {
+    return isHomePage ? `#${section}` : `/#${section}`;
+  };
 
   useEffect(() => {
     if (!forceActive) {
@@ -36,7 +46,7 @@ export default function Header({ forceActive = false }: HeaderProps) {
     <header className={`header ${forceActive || isHeaderActive ? 'active' : ''}`} data-header>
       <div className="container">
         <h1>
-          <Link href="#" className="flex-center">
+          <Link href="/" className="flex-center">
             <div>
               <Image src="/logo.png" alt="Aantara Steel Logo" width={100} height={100} style={{ width: '10rem', height: 'auto' }} />
             </div>
@@ -48,7 +58,7 @@ export default function Header({ forceActive = false }: HeaderProps) {
 
         <nav className={`navbar ${isNavOpen ? 'active' : ''}`} data-navbar>
           <div className="navbar-top">
-            <Link href="#" className="flex-center">
+            <Link href="/" className="flex-center">
               <div>
                 <Image src="/logo.png" alt="Aantara Steel Logo" width={100} height={100} style={{ width: '10rem', height: 'auto' }} />
               </div>
@@ -64,31 +74,31 @@ export default function Header({ forceActive = false }: HeaderProps) {
 
           <ul className="navbar-list">
             <li className="navbar-item">
-              <Link href="#home" className="navbar-link" onClick={closeNav}>
+              <Link href={getNavHref('home')} className="navbar-link" onClick={closeNav}>
                 <span>Home</span>
                 <IonIcon name="chevron-forward" />
               </Link>
             </li>
             <li className="navbar-item">
-              <Link href="#about" className="navbar-link" onClick={closeNav}>
+              <Link href={getNavHref('about')} className="navbar-link" onClick={closeNav}>
                 <span>About</span>
                 <IonIcon name="chevron-forward" />
               </Link>
             </li>
             <li className="navbar-item">
-              <Link href="#service" className="navbar-link" onClick={closeNav}>
+              <Link href={getNavHref('service')} className="navbar-link" onClick={closeNav}>
                 <span>Service</span>
                 <IonIcon name="chevron-forward" />
               </Link>
             </li>
             <li className="navbar-item">
-              <Link href="#product" className="navbar-link" onClick={closeNav}>
+              <Link href={getNavHref('product')} className="navbar-link" onClick={closeNav}>
                 <span>Products for exports</span>
                 <IonIcon name="chevron-forward" />
               </Link>
             </li>
             <li className="navbar-item">
-              <Link href="#contact" className="navbar-link" onClick={closeNav}>
+              <Link href={getNavHref('contact')} className="navbar-link" onClick={closeNav}>
                 <span>Contact us</span>
                 <IonIcon name="chevron-forward" />
               </Link>
@@ -100,6 +110,7 @@ export default function Header({ forceActive = false }: HeaderProps) {
           <div>
             <p className="contact-label">Contact us on</p>
             <Link href="tel:+919579896842" className="contact-number">+91 9579896842</Link>
+            <Link href="tel:+917028693829" className="contact-number" style={{ fontSize: '0.9em', marginTop: '0.2rem' }}>+91 7028693829</Link>
           </div>
           <div className="contact-icon">
             <IonIcon name="call-outline" />

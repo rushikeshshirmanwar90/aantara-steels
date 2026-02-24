@@ -5,21 +5,21 @@ export default function Products() {
   const products = [
     {
       id: '01',
-      name: 'Rolling shutter guide',
-      description: 'Sturdy metal guide rails designed to facilitate smooth and aligned movement of rolling shutters, ensuring consistent and reliable operation.',
-      icon: '/assets/images/products icons/strip.png'
+      name: 'Lead Coil',
+      description: 'Premium lead coil wire engineered for superior electrical conductivity and corrosion resistance, ideal for electrical installations',
+      image: '/assets/images/product imgs/9. Lead-Coil-Wire.png'
     },
     {
       id: '02',
-      name: 'Rolling shutter',
-      description: 'Versatile and robust metal shutters designed for securing commercial, industrial, and residential spaces with reliable protection and easy operation.',
-      icon: '/assets/images/products icons/garage.png'
+      name: 'Rolling Shutter',
+      description: 'Versatile and robust metal shutters designed for securing commercial, industrial, and residential spaces with reliable protection',
+      image: '/assets/images/product imgs/7. Rolling shutter.jpg'
     },
     {
       id: '03',
-      name: 'Binding wire',
-      description: 'Strong, flexible steel wire used for reinforcement and securing purposes in construction, concrete work, and other industrial applications.',
-      icon: '/assets/images/products icons/barbed-wire.png'
+      name: 'Shutter Steel Wire',
+      description: 'High-quality spring wire specifically manufactured for rolling shutter mechanisms, providing optimal tension and smooth',
+      image: '/assets/images/product imgs/8. Rolling shutter spring wire.jpg'
     }
   ];
 
@@ -43,16 +43,17 @@ export default function Products() {
           </Link>
         </div>
 
-        <ul className="service-list grid-list">
+        <ul className="grid-list" style={{ margin: '5rem 0' }}>
           {products.map((product) => (
             <li key={product.id}>
-              <div className="service-card">
+              <div className="service-card product-card-home">
                 <div className="card-icon">
                   <Image
-                    src={product.icon}
-                    width={80}
-                    height={60}
+                    src={product.image}
+                    width={250}
+                    height={250}
                     loading="lazy"
+                    className="img"
                     alt={product.name}
                   />
                 </div>
@@ -61,9 +62,14 @@ export default function Products() {
                   <span className="span">{product.id}</span>{product.name}
                 </h3>
 
-                <p className="card-text">
-                  {product.description}
-                </p>
+                <div className="card-text-container">
+                  <p className="card-text">
+                    {product.description}...
+                  </p>
+                  <Link href="/products" className="see-more-link">
+                    See More
+                  </Link>
+                </div>
               </div>
             </li>
           ))}

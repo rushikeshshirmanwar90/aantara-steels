@@ -125,7 +125,8 @@ aantara/
 
 ## Contact Information
 
-- **Phone**: +91 9579896842
+- **Phone**: +91 9579896842 / +91 7028693829
+- **Email**: Aantarasteel@gmail.com
 - **Company**: Aantara Steel Pvt Ltd
 - **Tagline**: CONNECT | TRADE | GROW
 
