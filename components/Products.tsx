@@ -5,9 +5,9 @@ export default function Products() {
   const products = [
     {
       id: '01',
-      name: 'Lead Coil',
-      description: 'Premium lead coil wire engineered for superior electrical conductivity and corrosion resistance, ideal for electrical installations',
-      image: '/assets/images/product imgs/9. Lead-Coil-Wire.png'
+      name: 'Shutter Steel Coil',
+      description: 'High-grade steel coil specifically designed for rolling shutter manufacturing, offering superior strength, durability, and corrosion resistance',
+      image: '/assets/images/product imgs/8. Rolling shutter spring wire.jpg'
     },
     {
       id: '02',
