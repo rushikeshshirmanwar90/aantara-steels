@@ -114,8 +114,8 @@ Message: ${formData.message}`;
                     <IonIcon name="call-outline" />
                   </div>
                   <div className="address-text">
-                    <a href="tel:+919579896842" style={{ color: '#fff', textDecoration: 'none' }}>
-                      <strong>+91 9579896842</strong>
+                    <a href="tel:+919834401574" style={{ color: '#fff', textDecoration: 'none' }}>
+                      <strong>+91 9834401574</strong>
                     </a>
                   </div>
                 </div>

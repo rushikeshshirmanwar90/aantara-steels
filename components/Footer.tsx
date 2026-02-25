@@ -69,7 +69,7 @@ export default function Footer() {
               <p className="footer-list-title">Contact Info</p>
             </li>
             <li>
-              <Link href="tel:+919579896842" className="footer-link">+91 9579896842</Link>
+              <Link href="tel:+919834401574" className="footer-link">+91 9834401574</Link>
             </li>
             <li>
               <Link href="tel:+917028693829" className="footer-link">+91 7028693829</Link>
@@ -84,13 +84,28 @@ export default function Footer() {
               <p className="footer-list-title">Products for exports</p>
             </li>
             <li>
-              <Link href="#" className="footer-link">Rolling shutter guide</Link>
+              <Link href="/products" className="footer-link">Fencing wire</Link>
             </li>
             <li>
-              <Link href="#" className="footer-link">Rolling shutter</Link>
+              <Link href="/products" className="footer-link">Rolling shutter spring</Link>
             </li>
             <li>
-              <Link href="#" className="footer-link">Binding wire</Link>
+              <Link href="/products" className="footer-link">Binding wire</Link>
+            </li>
+            <li>
+              <Link href="/products" className="footer-link">Rolling shutter guide</Link>
+            </li>
+            <li>
+              <Link href="/products" className="footer-link">Rolling shutter L bracket</Link>
+            </li>
+            <li>
+              <Link href="/products" className="footer-link">Galvanised steel strip</Link>
+            </li>
+            <li>
+              <Link href="/products" className="footer-link">Rolling shutter</Link>
+            </li>
+            <li>
+              <Link href="/products" className="footer-link">Rolling shutter Spring Wire</Link>
             </li>
           </ul>
         </div>
