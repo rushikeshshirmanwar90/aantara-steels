@@ -77,6 +77,12 @@ export default function Footer() {
             <li>
               <Link href="mailto:Aantarasteel@gmail.com" className="footer-link">aantarasteel@gmail.com</Link>
             </li>
+            <li>
+              <Link href="https://www.facebook.com/share/1DhyUsL7zL/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="footer-link">Facebook</Link>
+            </li>
+            <li>
+              <Link href="https://www.instagram.com/aantarasteelpvt.ltd?igsh=dXVyaDNmYnB3aWky&utm_source=qr" target="_blank" rel="noopener noreferrer" className="footer-link">Instagram</Link>
+            </li>
           </ul>
 
           <ul className="footer-list">

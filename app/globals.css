@@ -1587,3 +1587,37 @@ body {
     height: 150px;
   }
 }
+/* Social Media Icons Styles */
+.social-media-row {
+  justify-content: flex-start !important;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #FF8800;
+  transform: scale(1.1);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .social-icons {
+    gap: 1rem;
+  }
+  
+  .social-icon {
+    font-size: 1.8rem;
+  }
+}

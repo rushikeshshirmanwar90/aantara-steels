@@ -141,6 +141,17 @@ Message: ${formData.message}`;
                     </a>
                   </div>
                 </div>
+                
+                <div className="address-item social-media-row">
+                  <div className="social-icons">
+                    <a href="https://www.facebook.com/share/1DhyUsL7zL/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="social-icon">
+                      <IonIcon name="logo-facebook" />
+                    </a>
+                    <a href="https://www.instagram.com/aantarasteelpvt.ltd?igsh=dXVyaDNmYnB3aWky&utm_source=qr" target="_blank" rel="noopener noreferrer" className="social-icon">
+                      <IonIcon name="logo-instagram" />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
