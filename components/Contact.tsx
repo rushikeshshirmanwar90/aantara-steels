@@ -32,8 +32,8 @@ Message: ${formData.message}`;
     // Encode the message for URL
     const encodedMessage = encodeURIComponent(message);
     
-    // Send to primary WhatsApp number
-    const whatsappUrl = `https://wa.me/919579896842?text=${encodedMessage}`;
+    // Send to secondary WhatsApp number
+    const whatsappUrl = `https://wa.me/917028693829?text=${encodedMessage}`;
     
     // Open WhatsApp in new tab
     window.open(whatsappUrl, '_blank');
