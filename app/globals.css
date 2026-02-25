@@ -1463,6 +1463,7 @@ body {
   flex-direction: column !important;
   justify-content: space-between !important;
   padding: 2rem !important;
+  overflow: hidden !important;
 }
 
 .product-card-home .card-icon {
@@ -1478,6 +1479,11 @@ body {
 .product-card-home .card-title {
   margin-bottom: 1rem;
   flex-shrink: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .card-text-container {
@@ -1485,12 +1491,18 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .product-card-home .card-text {
   margin-bottom: 1rem;
   line-height: 1.6;
   flex: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
 }
 
 .see-more-link {
@@ -1501,6 +1513,7 @@ body {
   transition: color 0.3s ease;
   align-self: flex-start;
   margin-top: auto;
+  flex-shrink: 0;
 }
 
 .see-more-link:hover {
@@ -1511,13 +1524,56 @@ body {
 /* Mobile responsive */
 @media (max-width: 768px) {
   .product-card-home {
-    height: 420px !important;
+    height: 400px !important;
     padding: 1.5rem !important;
   }
   
   .product-card-home .card-icon {
-    height: 150px;
+    height: 120px;
     margin-bottom: 1rem;
+  }
+  
+  .product-card-home .card-title {
+    font-size: 1.2rem;
+    -webkit-line-clamp: 2;
+  }
+  
+  .product-card-home .card-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    -webkit-line-clamp: 3;
+  }
+  
+  .see-more-link {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card-home {
+    height: 380px !important;
+    padding: 1rem !important;
+  }
+  
+  .product-card-home .card-icon {
+    height: 100px;
+    margin-bottom: 0.8rem;
+  }
+  
+  .product-card-home .card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .product-card-home .card-text {
+    font-size: 0.85rem;
+    line-height: 1.3;
+    -webkit-line-clamp: 3;
+    margin-bottom: 0.8rem;
+  }
+  
+  .see-more-link {
+    font-size: 12px;
   }
 }
 

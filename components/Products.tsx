@@ -5,9 +5,9 @@ export default function Products() {
   const products = [
     {
       id: '01',
-      name: 'Shutter Steel Coil',
-      description: 'High-grade steel coil specifically designed for rolling shutter manufacturing, offering superior strength, durability, and corrosion resistance',
-      image: '/assets/images/product imgs/8. Rolling shutter spring wire.jpg'
+      name: 'Galvanised Steel Strip',
+      description: 'Corrosion-resistant steel strips coated with zinc, offering enhanced durability and protection for industrial, construction, and manufacturing applications',
+      image: '/assets/images/product imgs/6. Galvanised steel strip.jpg'
     },
     {
       id: '02',
