@@ -1621,3 +1621,120 @@ body {
     font-size: 1.8rem;
   }
 }
+/* Company Details Styles */
+.company-details {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.detail-item {
+  text-align: center;
+  padding: 1rem;
+}
+
+.detail-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #FF8800;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detail-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .company-details {
+    margin: 2rem 0;
+    padding: 1.5rem;
+  }
+  
+  .details-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .detail-title {
+    font-size: 1.2rem;
+  }
+  
+  .detail-value {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .company-details {
+    padding: 1rem;
+  }
+  
+  .details-grid {
+    gap: 1rem;
+  }
+  
+  .detail-item {
+    padding: 0.5rem;
+  }
+  
+  .detail-title {
+    font-size: 1.1rem;
+  }
+  
+  .detail-value {
+    font-size: 1.3rem;
+  }
+}
+/* Map Section Styles */
+.map-section {
+  padding: 3rem 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-container {
+  width: 90%;
+  height: 450px;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .map-container {
+    height: 350px;
+    width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .map-container {
+    height: 300px;
+    width: 95%;
+  }
+}

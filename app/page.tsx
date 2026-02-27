@@ -7,6 +7,7 @@ import About from '../components/About';
 import Products from '../components/Products';
 import Services from '../components/Services';
 import Contact from '../components/Contact';
+import Map from '../components/Map';
 import Footer from '../components/Footer';
 import BackToTop from '../components/BackToTop';
 
@@ -94,6 +95,7 @@ export default function Home() {
           <Contact />
         </article>
       </main>
+      <Map />
       <Footer />
       <BackToTop />
     </div>

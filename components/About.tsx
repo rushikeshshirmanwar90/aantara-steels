@@ -35,6 +35,28 @@ export default function About() {
             professionalism, making us a trusted partner for all your steel
             export needs.
           </p>
+
+          <div className="company-details">
+            <div className="details-grid">
+              <div className="detail-item">
+                <h4 className="detail-title">Year of Establishment</h4>
+                <p className="detail-value">2010</p>
+              </div>
+              <div className="detail-item">
+                <h4 className="detail-title">Number of Staff</h4>
+                <p className="detail-value">10</p>
+              </div>
+              <div className="detail-item">
+                <h4 className="detail-title">Annual Turnover</h4>
+                <p className="detail-value">₹7.5 Cr</p>
+              </div>
+              <div className="detail-item">
+                <h4 className="detail-title">IE Code</h4>
+                <p className="detail-value">ABBCA8405G</p>
+              </div>
+            </div>
+          </div>
+
           <Link href="#contact" className="btn">Learn More</Link>
         </div>
       </div>
