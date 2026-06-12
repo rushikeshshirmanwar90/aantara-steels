@@ -109,8 +109,8 @@ export default function Header({ forceActive = false }: HeaderProps) {
         <div className="header-contact">
           <div>
             <p className="contact-label">Contact us on</p>
-            <Link href="tel:+919834401574" className="contact-number">+91 9834401574</Link>
-            <Link href="tel:+917028693829" className="contact-number" style={{ fontSize: '0.9em', marginTop: '0.2rem' }}>+91 7028693829</Link>
+            <Link href="tel:+917028693829" className="contact-number">+91 7028693829</Link>
+            <Link href="tel:+919834401574" className="contact-number" style={{ fontSize: '0.9em', marginTop: '0.2rem' }}>+91 9834401574</Link>
           </div>
           <div className="contact-icon">
             <IonIcon name="call-outline" />
