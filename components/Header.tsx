@@ -14,10 +14,10 @@ export default function Header({ forceActive = false }: HeaderProps) {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isHeaderActive, setIsHeaderActive] = useState(false);
   const pathname = usePathname();
-  
+
   // Determine if we're on the home page or another page
   const isHomePage = pathname === '/';
-  
+
   // Function to get the correct href for navigation links
   const getNavHref = (section: string) => {
     return isHomePage ? `#${section}` : `/#${section}`;
@@ -109,7 +109,7 @@ export default function Header({ forceActive = false }: HeaderProps) {
         <div className="header-contact">
           <div>
             <p className="contact-label">Contact us on</p>
-            <Link href="tel:+919579896842" className="contact-number">+91 9579896842</Link>
+            <Link href="tel:+919834401574" className="contact-number">+91 9834401574</Link>
             <Link href="tel:+917028693829" className="contact-number" style={{ fontSize: '0.9em', marginTop: '0.2rem' }}>+91 7028693829</Link>
           </div>
           <div className="contact-icon">
