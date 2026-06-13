@@ -79,28 +79,37 @@ export default function ProductsPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
-                      padding: '0.75rem 1.5rem',
+                      padding: '1.2rem 2.5rem',
                       backgroundColor: '#FF6B35',
                       color: 'white',
                       textDecoration: 'none',
-                      borderRadius: '0.5rem',
+                      borderRadius: '0.75rem',
                       fontWeight: 'bold',
-                      fontSize: '0.95rem',
-                      transition: 'all 0.3s ease',
-                      display: 'inline-block',
+                      fontSize: '1.1rem',
+                      transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '0.7rem',
                       whiteSpace: 'nowrap',
-                      cursor: 'pointer'
+                      cursor: 'pointer',
+                      boxShadow: '0 4px 15px rgba(255, 107, 53, 0.3)',
+                      border: 'none',
+                      position: 'relative',
+                      overflow: 'hidden'
                     }}
                     onMouseEnter={(e) => {
                       e.currentTarget.style.backgroundColor = '#E55A24';
-                      e.currentTarget.style.transform = 'scale(1.05)';
+                      e.currentTarget.style.transform = 'translateY(-2px)';
+                      e.currentTarget.style.boxShadow = '0 6px 20px rgba(255, 107, 53, 0.4)';
                     }}
                     onMouseLeave={(e) => {
                       e.currentTarget.style.backgroundColor = '#FF6B35';
-                      e.currentTarget.style.transform = 'scale(1)';
+                      e.currentTarget.style.transform = 'translateY(0)';
+                      e.currentTarget.style.boxShadow = '0 4px 15px rgba(255, 107, 53, 0.3)';
                     }}
                   >
-                    ⬇ Download Brochure
+                    <span style={{ fontSize: '1.3rem' }}>📄</span>
+                    View Brochure
                   </a>
                 </div>
               </div>
