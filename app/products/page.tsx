@@ -65,39 +65,30 @@ export default function ProductsPage() {
           <div className="container">
             <div
               className="title-wrapper"
-              style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+              style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '2rem', flexWrap: 'wrap' }}
             >
               <div>
-                <p className="section-subtitle" style={{ textAlign: 'center' }}>
+                <p className="section-subtitle">
                   our Products
                 </p>
 
-                <h2 className="h2 section-title" style={{ textAlign: 'center' }}>
+                <h2 className="h2 section-title">
                   Provides the Best Quality Product
                 </h2>
               </div>
+
+              <a
+                href="/Anatara-Brochure.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ margin: 'auto' }}
+                className="btn"
+              >
+                Download Brochure
+              </a>
             </div>
 
             <ul className="grid-list" style={{ margin: '5rem 0' }}>
-              <li>
-                <div className="service-card" style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', color: 'white' }}>
-                  <div className="card-icon" style={{ textAlign: 'center', fontSize: '3rem' }}>
-                    📋
-                  </div>
-
-                  <h3 className="h3 card-title" style={{ color: 'white' }}>
-                    <span className="span" style={{ color: 'rgba(255,255,255,0.8)' }}>📄</span>Anatara Brochure
-                  </h3>
-
-                  <p className="card-text" style={{ color: 'rgba(255,255,255,0.9)' }}>
-                    Complete product catalog and company information. Download our comprehensive brochure featuring all our steel products and export specifications.
-                  </p>
-
-                  <a href="/Anatara-Brochure.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'white', fontWeight: 'bold', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', marginTop: '1rem' }}>
-                    ⬇ Download Brochure
-                  </a>
-                </div>
-              </li>
               {products.map((product) => (
                 <li key={product.id}>
                   <div className="service-card">

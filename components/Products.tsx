@@ -26,7 +26,7 @@ export default function Products() {
   return (
     <section className="section" id="product" aria-label="product">
       <div className="container">
-        <div className="title-wrapper">
+        <div className="title-wrapper" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '2rem', flexWrap: 'wrap' }}>
           <div>
             <p className="section-subtitle">our Products</p>
             <h2 className="h2 section-title">
@@ -34,36 +34,27 @@ export default function Products() {
             </h2>
           </div>
 
-          <Link
-            href="/products"
-            style={{ margin: '2.5rem auto' }}
-            className="btn"
-          >
-            See More Products
-          </Link>
+          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+            <Link
+              href="/Anatara-Brochure.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ margin: 'auto' }}
+              className="btn"
+            >
+              Download Brochure
+            </Link>
+            <Link
+              href="/products"
+              style={{ margin: 'auto' }}
+              className="btn"
+            >
+              See More Products
+            </Link>
+          </div>
         </div>
 
         <ul className="grid-list" style={{ margin: '5rem 0' }}>
-          <li>
-            <div className="service-card product-card-home" style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', color: 'white' }}>
-              <div className="card-icon" style={{ textAlign: 'center', fontSize: '3rem' }}>
-                📋
-              </div>
-
-              <h3 className="h3 card-title" style={{ color: 'white' }}>
-                <span className="span" style={{ color: 'rgba(255,255,255,0.8)' }}>📄</span>Anatara Brochure
-              </h3>
-
-              <div className="card-text-container">
-                <p className="card-text" style={{ color: 'rgba(255,255,255,0.9)' }}>
-                  Complete product catalog and company information. Download our comprehensive brochure featuring all our steel products and export specifications.
-                </p>
-                <Link href="/Anatara-Brochure.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'white', fontWeight: 'bold', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
-                  ⬇ Download Brochure
-                </Link>
-              </div>
-            </div>
-          </li>
           {products.map((product) => (
             <li key={product.id}>
               <div className="service-card product-card-home">
