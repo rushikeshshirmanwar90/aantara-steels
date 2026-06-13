@@ -38,36 +38,38 @@ export default function Products() {
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
-                  padding: '1.5rem 3.5rem',
-                  backgroundColor: '#D84315',
-                  color: 'white',
+                  padding: '12px 35px',
+                  backgroundColor: '#E8F4F8',
+                  color: '#233b77',
                   textDecoration: 'none',
-                  borderRadius: '0.75rem',
-                  fontWeight: 'bold',
-                  fontSize: '1.3rem',
-                  transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                  borderRadius: '4px',
+                  fontWeight: '600',
+                  fontSize: '1.4rem',
+                  letterSpacing: '1px',
+                  transition: 'all 0.25s ease',
                   display: 'inline-flex',
                   alignItems: 'center',
                   gap: '0.8rem',
                   whiteSpace: 'nowrap',
-                  boxShadow: '0 6px 20px rgba(216, 67, 21, 0.4)',
+                  boxShadow: '0 4px 12px rgba(35, 59, 119, 0.15)',
                   border: 'none',
                   cursor: 'pointer',
                   position: 'relative',
-                  overflow: 'hidden'
+                  overflow: 'hidden',
+                  fontFamily: '"Oswald", sans-serif'
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = '#BF360C';
-                  e.currentTarget.style.transform = 'translateY(-3px)';
-                  e.currentTarget.style.boxShadow = '0 8px 25px rgba(216, 67, 21, 0.5)';
+                  e.currentTarget.style.backgroundColor = '#D0E8F0';
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                  e.currentTarget.style.boxShadow = '0 6px 16px rgba(35, 59, 119, 0.25)';
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = '#D84315';
+                  e.currentTarget.style.backgroundColor = '#E8F4F8';
                   e.currentTarget.style.transform = 'translateY(0)';
-                  e.currentTarget.style.boxShadow = '0 6px 20px rgba(216, 67, 21, 0.4)';
+                  e.currentTarget.style.boxShadow = '0 4px 12px rgba(35, 59, 119, 0.15)';
                 }}
               >
-                <span style={{ fontSize: '1.6rem' }}>📄</span>
+                <span style={{ fontSize: '1.4rem' }}>📄</span>
                 View Brochure
               </Link>
             </div>
