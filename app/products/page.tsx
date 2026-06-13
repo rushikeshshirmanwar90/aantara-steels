@@ -79,36 +79,36 @@ export default function ProductsPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
-                      padding: '1.2rem 2.5rem',
-                      backgroundColor: '#FF6B35',
+                      padding: '1.5rem 3.5rem',
+                      backgroundColor: '#D84315',
                       color: 'white',
                       textDecoration: 'none',
                       borderRadius: '0.75rem',
                       fontWeight: 'bold',
-                      fontSize: '1.1rem',
+                      fontSize: '1.3rem',
                       transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
                       display: 'inline-flex',
                       alignItems: 'center',
-                      gap: '0.7rem',
+                      gap: '0.8rem',
                       whiteSpace: 'nowrap',
                       cursor: 'pointer',
-                      boxShadow: '0 4px 15px rgba(255, 107, 53, 0.3)',
+                      boxShadow: '0 6px 20px rgba(216, 67, 21, 0.4)',
                       border: 'none',
                       position: 'relative',
                       overflow: 'hidden'
                     }}
                     onMouseEnter={(e) => {
-                      e.currentTarget.style.backgroundColor = '#E55A24';
-                      e.currentTarget.style.transform = 'translateY(-2px)';
-                      e.currentTarget.style.boxShadow = '0 6px 20px rgba(255, 107, 53, 0.4)';
+                      e.currentTarget.style.backgroundColor = '#BF360C';
+                      e.currentTarget.style.transform = 'translateY(-3px)';
+                      e.currentTarget.style.boxShadow = '0 8px 25px rgba(216, 67, 21, 0.5)';
                     }}
                     onMouseLeave={(e) => {
-                      e.currentTarget.style.backgroundColor = '#FF6B35';
+                      e.currentTarget.style.backgroundColor = '#D84315';
                       e.currentTarget.style.transform = 'translateY(0)';
-                      e.currentTarget.style.boxShadow = '0 4px 15px rgba(255, 107, 53, 0.3)';
+                      e.currentTarget.style.boxShadow = '0 6px 20px rgba(216, 67, 21, 0.4)';
                     }}
                   >
-                    <span style={{ fontSize: '1.3rem' }}>📄</span>
+                    <span style={{ fontSize: '1.6rem' }}>📄</span>
                     View Brochure
                   </a>
                 </div>
