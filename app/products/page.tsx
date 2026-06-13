@@ -63,29 +63,47 @@ export default function ProductsPage() {
       <main>
         <section>
           <div className="container">
-            <div
-              className="title-wrapper"
-              style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '2rem', flexWrap: 'wrap' }}
-            >
-              <div>
-                <p className="section-subtitle">
+            <div className="title-wrapper" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <div style={{ width: '100%' }}>
+                <p className="section-subtitle" style={{ textAlign: 'center' }}>
                   our Products
                 </p>
 
-                <h2 className="h2 section-title">
-                  Provides the Best Quality Product
-                </h2>
-              </div>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap' }}>
+                  <h2 className="h2 section-title" style={{ textAlign: 'center', margin: 0 }}>
+                    Provides the Best Quality Product
+                  </h2>
 
-              <a
-                href="/Anatara-Brochure.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ margin: 'auto' }}
-                className="btn"
-              >
-                Download Brochure
-              </a>
+                  <a
+                    href="/Anatara-Brochure.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      padding: '0.75rem 1.5rem',
+                      backgroundColor: '#FF6B35',
+                      color: 'white',
+                      textDecoration: 'none',
+                      borderRadius: '0.5rem',
+                      fontWeight: 'bold',
+                      fontSize: '0.95rem',
+                      transition: 'all 0.3s ease',
+                      display: 'inline-block',
+                      whiteSpace: 'nowrap',
+                      cursor: 'pointer'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.backgroundColor = '#E55A24';
+                      e.currentTarget.style.transform = 'scale(1.05)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.backgroundColor = '#FF6B35';
+                      e.currentTarget.style.transform = 'scale(1)';
+                    }}
+                  >
+                    ⬇ Download Brochure
+                  </a>
+                </div>
+              </div>
             </div>
 
             <ul className="grid-list" style={{ margin: '5rem 0' }}>

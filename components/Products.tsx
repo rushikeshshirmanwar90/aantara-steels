@@ -26,32 +26,50 @@ export default function Products() {
   return (
     <section className="section" id="product" aria-label="product">
       <div className="container">
-        <div className="title-wrapper" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '2rem', flexWrap: 'wrap' }}>
+        <div className="title-wrapper">
           <div>
             <p className="section-subtitle">our Products</p>
-            <h2 className="h2 section-title">
-              Provides the Best Quality Product
-            </h2>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '2rem', flexWrap: 'wrap' }}>
+              <h2 className="h2 section-title">
+                Provides the Best Quality Product
+              </h2>
+              <Link
+                href="/Anatara-Brochure.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  padding: '0.75rem 1.5rem',
+                  backgroundColor: '#FF6B35',
+                  color: 'white',
+                  textDecoration: 'none',
+                  borderRadius: '0.5rem',
+                  fontWeight: 'bold',
+                  fontSize: '0.95rem',
+                  transition: 'all 0.3s ease',
+                  display: 'inline-block',
+                  whiteSpace: 'nowrap'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = '#E55A24';
+                  e.currentTarget.style.transform = 'scale(1.05)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = '#FF6B35';
+                  e.currentTarget.style.transform = 'scale(1)';
+                }}
+              >
+                ⬇ Download Brochure
+              </Link>
+            </div>
           </div>
 
-          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-            <Link
-              href="/Anatara-Brochure.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ margin: 'auto' }}
-              className="btn"
-            >
-              Download Brochure
-            </Link>
-            <Link
-              href="/products"
-              style={{ margin: 'auto' }}
-              className="btn"
-            >
-              See More Products
-            </Link>
-          </div>
+          <Link
+            href="/products"
+            style={{ margin: '2.5rem auto' }}
+            className="btn"
+          >
+            See More Products
+          </Link>
         </div>
 
         <ul className="grid-list" style={{ margin: '5rem 0' }}>
