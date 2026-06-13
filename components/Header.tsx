@@ -103,6 +103,12 @@ export default function Header({ forceActive = false }: HeaderProps) {
                 <IonIcon name="chevron-forward" />
               </Link>
             </li>
+            <li className="navbar-item">
+              <Link href="/Anatara-Brochure.pdf" target="_blank" rel="noopener noreferrer" className="navbar-link" onClick={closeNav}>
+                <span>Download Brochure</span>
+                <IonIcon name="download-outline" />
+              </Link>
+            </li>
           </ul>
         </nav>
 

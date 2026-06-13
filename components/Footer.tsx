@@ -47,6 +47,9 @@ export default function Footer() {
             <li>
               <Link href="#contact" className="footer-link">Contact Us</Link>
             </li>
+            <li>
+              <Link href="/Anatara-Brochure.pdf" target="_blank" rel="noopener noreferrer" className="footer-link">Download Brochure</Link>
+            </li>
           </ul>
 
           <ul className="footer-list">
