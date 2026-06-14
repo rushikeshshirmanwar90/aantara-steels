@@ -34,7 +34,7 @@ export default function Products() {
                 Provides the Best Quality Product
               </h2>
               <Link
-                href="/Anatara-Brochure.pdf"
+                href="https://drive.google.com/file/d/1FUX22_jg6EfQz73T0dubtVq1-7fCw6Hs/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{

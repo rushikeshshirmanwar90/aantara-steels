@@ -104,7 +104,7 @@ export default function Header({ forceActive = false }: HeaderProps) {
               </Link>
             </li>
             <li className="navbar-item">
-              <Link href="/Anatara-Brochure.pdf" target="_blank" rel="noopener noreferrer" className="navbar-link" onClick={closeNav}>
+              <Link href="https://drive.google.com/file/d/1FUX22_jg6EfQz73T0dubtVq1-7fCw6Hs/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="navbar-link" onClick={closeNav}>
                 <span>Download Brochure</span>
                 <IonIcon name="download-outline" />
               </Link>
