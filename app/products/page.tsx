@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -75,7 +77,7 @@ export default function ProductsPage() {
                   </h2>
 
                   <a
-                    href="/Anatara-Brochure.pdf"
+                    href="https://drive.google.com/file/d/1FUX22_jg6EfQz73T0dubtVq1-7fCw6Hs/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
